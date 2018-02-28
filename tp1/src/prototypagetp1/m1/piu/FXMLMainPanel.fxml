@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="407.0" prefWidth="643.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141">
+   <children>
+      <Label layoutX="7.0" layoutY="6.0" text="Carnet d'adresses" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="3.0" />
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="382.0" prefWidth="194.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <ListView prefHeight="382.0" prefWidth="192.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+      <TableView layoutX="213.0" layoutY="11.0" prefHeight="200.0" prefWidth="378.0" style="-fx-color: #CCC;" AnchorPane.bottomAnchor="220.0" AnchorPane.leftAnchor="210.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+        <columns>
+          <TableColumn prefWidth="110.0" text="Nom" />
+          <TableColumn prefWidth="110.0" text="Prénom" />
+            <TableColumn prefWidth="190.0" text="Email" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

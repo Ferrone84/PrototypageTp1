@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="524.0" prefWidth="682.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="prototypagetp1.m1.piu.FXMLMainFrameController">
+    <children>
+      <MenuBar layoutX="6.0" layoutY="7.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="New" />
+                  <MenuItem mnemonicParsing="false" text="Open" />
+                  <MenuItem mnemonicParsing="false" text="Save" />
+                  <MenuItem mnemonicParsing="false" text="Save as ..." />
+                  <MenuItem mnemonicParsing="false" text="Exit" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Actions">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Ajouter" />
+                  <MenuItem mnemonicParsing="false" text="Modifier" />
+                  <MenuItem mnemonicParsing="false" text="Supprimer" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <ToolBar layoutX="225.0" layoutY="4.0" prefHeight="40.0" prefWidth="452.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="29.0">
+        <items>
+          <Button mnemonicParsing="false" text="Ajouter" />
+            <Button layoutX="10.0" layoutY="11.0" mnemonicParsing="false" text="Modifier" />
+            <Button layoutX="76.0" layoutY="11.0" mnemonicParsing="false" text="Supprimer" />
+            <Pane HBox.hgrow="ALWAYS" />
+            <TextField />
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="11.0" mnemonicParsing="false" text="?" />
+        </items>
+      </ToolBar>
+    </children>
+</AnchorPane>
