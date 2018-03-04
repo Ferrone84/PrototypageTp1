@@ -24,6 +24,8 @@ public class ContactManagerFX extends Application {
 		Scene scene = new Scene(root);
 		
 		stage.setScene(scene);
+        stage.setTitle("Contact Manager");
+        stage.setResizable(false);
 		stage.show();
 	}
 
