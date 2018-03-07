@@ -19,6 +19,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.MenuButton;
 import javafx.scene.layout.Pane;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 /**
@@ -42,9 +43,10 @@ public class FXMLMainFrameController implements Initializable {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("FXMLNewContact.fxml"));
             Parent root1 = (Parent) fxmlLoader.load();
             Stage stage = new Stage();
+			stage.initModality(Modality.APPLICATION_MODAL);
             stage.setScene(new Scene(root1));
             stage.setTitle("New Contact");
-            stage.setResizable(false);
+			stage.setResizable(false);
             stage.show();
         } catch (IOException ex) {
             Logger.getLogger(FXMLMainFrameController.class.getName()).log(Level.SEVERE, null, ex);
@@ -75,7 +77,7 @@ public class FXMLMainFrameController implements Initializable {
     
     @FXML
     private void handleIdentify(ActionEvent event) {
-        identify.setStyle("-fx-background-color: ");
+        identify.setStyle("");
         phones.setStyle("-fx-background-color: gray");
         address.setStyle("-fx-background-color: gray");
         
@@ -89,7 +91,7 @@ public class FXMLMainFrameController implements Initializable {
     @FXML
     private void handlePhones(ActionEvent event) {
         identify.setStyle("-fx-background-color: gray");
-        phones.setStyle("-fx-background-color: ");
+        phones.setStyle("");
         address.setStyle("-fx-background-color: gray");
         
         try {
@@ -103,7 +105,7 @@ public class FXMLMainFrameController implements Initializable {
     private void handleAddress(ActionEvent event) {
         identify.setStyle("-fx-background-color: gray");
         phones.setStyle("-fx-background-color: gray");
-        address.setStyle("-fx-background-color: ");
+        address.setStyle("");
         
         try {
             contentPaneContact.getChildren().setAll((Pane) FXMLLoader.load(getClass().getResource("FXMLAddress.fxml")));
@@ -118,9 +120,10 @@ public class FXMLMainFrameController implements Initializable {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("FXMLNewPhoneNumber.fxml"));
             Parent root1 = (Parent) fxmlLoader.load();
             Stage stage = new Stage();
+			stage.initModality(Modality.APPLICATION_MODAL);
             stage.setScene(new Scene(root1));
             stage.setTitle("New Phone Number");
-            stage.setResizable(false);
+			stage.setResizable(false);
             stage.show();
         } catch (IOException ex) {
             Logger.getLogger(FXMLMainFrameController.class.getName()).log(Level.SEVERE, null, ex);
