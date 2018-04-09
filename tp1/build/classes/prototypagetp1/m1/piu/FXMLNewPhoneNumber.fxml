@@ -7,10 +7,10 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="125.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="prototypagetp1.m1.piu.FXMLMainFrameController">
+<AnchorPane id="AnchorPane" prefHeight="125.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="prototypagetp1.m1.piu.FXMLMainFrameController">
    <children>
       <Label layoutX="14.0" layoutY="14.0" text="Enter new phone number:" />
-      <Label layoutX="14.0" layoutY="54.0" text="+" />
+      <Label layoutX="12.0" layoutY="54.0" text="+" />
       <TextField layoutX="26.0" layoutY="50.0" prefHeight="25.0" prefWidth="46.0" text="33" />
       <TextField layoutX="83.0" layoutY="50.0" prefHeight="25.0" prefWidth="119.0" text="6 00 00 00 00" />
       <SplitMenuButton layoutX="214.0" layoutY="50.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="126.0" text="Home">
